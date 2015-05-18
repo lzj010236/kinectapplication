@@ -1,0 +1,38 @@
+﻿<grammar version="1.0" xml:lang="en-US" root="rootRule" tag-format="semantics/1.0-literals" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="rootRule">
+    <one-of>
+      <item>
+        <tag>START</tag>
+        <one-of>
+          <item> start </item>
+          <item> begin </item>
+		  <item> start the game </item>
+		  <item> rock </item>
+        </one-of>
+      </item>
+      <item>
+        <tag>PAUSE</tag>
+        <one-of>
+          <item> pause </item>
+          <item> cease </item>
+        </one-of>
+      </item>
+<item>
+        <tag>SPEED_UP</tag>
+        <one-of>
+          <item> speed up </item>
+          <item> faster </item>
+          <item> up </item>
+        </one-of>
+      </item>
+<item>
+        <tag>SLOW_DOWN</tag>
+        <one-of>
+          <item> slow down </item>
+          <item> slower </item>
+          <item> down </item>
+        </one-of>
+      </item>
+    </one-of>
+  </rule>
+</grammar>
